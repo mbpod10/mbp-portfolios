@@ -1,0 +1,63 @@
+.greeting-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.greeting-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-top: 150px;
+  width: 50%;
+}
+.greeting-para {
+  width: 75%;  
+}
+.greeting-div p {
+  color: lightgray;
+  margin: 2px;
+}
+
+.name {
+  color: red;
+  font-size: 5rem;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+
+.fa-python {
+  color: yellow;
+  font-size: 3rem;  
+}
+
+.fa-react {
+  color: lightskyblue;
+  font-size: 3rem; 
+}
+
+.fa-js-square {
+  color: purple;
+  font-size: 3rem; 
+}
+
+.fa-html5 {
+  color: coral;
+  font-size: 3rem; 
+}
+
+.fa-css3 {
+  color: blue;
+  font-size: 3rem; 
+}

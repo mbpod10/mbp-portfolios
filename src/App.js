@@ -1,11 +1,13 @@
 import './App.css';
 import Projects from "./components/Projects"
 import Navbar from "./components/Navbar"
+import Greeting from "./components/Greeting"
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Greeting />
       <Projects />
       {/* <div id="home"></div> */}
     </div>
