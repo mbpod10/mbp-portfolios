@@ -61,3 +61,59 @@
   color: blue;
   font-size: 3rem; 
 }
+
+@media(max-width: 1200px) {
+  .greeting-container {
+    height: 300px
+  }
+  .greeting-div {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;    
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .greeting-image-container{
+    display: none;
+  }
+
+  .technology {  
+    /* padding-top: 100px; */
+  }
+
+  .fa-python, .fa-react ,.fa-js-square ,.fa-html5, .fa-css3 {    
+    font-size: 3rem;  
+  }    
+}
+
+@media(max-width: 480px) {
+
+  .greeting-container{
+    height: 250px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .greeting-div p {
+    color: lightgray;
+    margin: 2px;
+    font-size: .75rem;
+  }
+
+  .technology {
+    width: 100%;
+    /* justify-content: space-betwee; */
+  }
+  .fa-python, .fa-react ,.fa-js-square ,.fa-html5, .fa-css3 {    
+    font-size: 2rem;  
+  }    
+}

@@ -19,7 +19,7 @@ const Greeting = () => {
           </div>
         </div>
         <div className="image-div">
-          <RBS.Container>
+          <RBS.Container className='greeting-image-container'>
             <RBS.Row>
               <RBS.Col xs={6} md={4}>
                 <RBS.Image src="https://i.imgur.com/fiZpwG8.png" roundedCircle />
