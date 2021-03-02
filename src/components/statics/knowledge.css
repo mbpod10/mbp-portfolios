@@ -47,5 +47,25 @@
   }
 
   @media(max-width: 1200px) { 
-    
+    .knowledge {
+      color: red;
+      font-size: 2rem;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+    .knowledge-div {
+      flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+    }
+    .segment{
+      width: 100%;
+    }
+
+  }
+
+  @media(max-width: 480px) {
+    .segment{
+      width: 100%;
+    }
   }

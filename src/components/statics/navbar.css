@@ -39,6 +39,14 @@
 
 .nav-text {
   font-size: 1.25rem;
+  padding-left: 10px;
+  color: white;
+}
+
+.nav-div {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
 }
 
 @media(max-width: 1200px) { 

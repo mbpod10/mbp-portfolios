@@ -35,24 +35,45 @@ const Navbar = (props) => {
                 <FontAwesomeIcon icon={faLinkedin} />
               </RBS.Nav.Link> :
               <RBS.Nav.Link href="https://www.linkedin.com/in/mbrock-podgurski/">
-                <FontAwesomeIcon icon={faLinkedin} />{"  "}
-                <span className="nav-text">LinkedIn</span>
+                <div className='nav-div'>
+                  <FontAwesomeIcon icon={faLinkedin} />{"  "}
+                  <span className="nav-text">LinkedIn</span>
+                </div>
               </RBS.Nav.Link>
             }
-
-
-            <RBS.Nav.Link href="https://github.com/mbpod10">
-              <FontAwesomeIcon icon={faGithub} />
-            </RBS.Nav.Link>
-
-            <RBS.Nav.Link href="http://copen.io">
-              <FontAwesomeIcon icon={faCodepen} />
-            </RBS.Nav.Link>
-
-            <RBS.Nav.Link eventKey={2} href="https://www.youtube.com/watch?v=JYjdbw7XD3U&feature=youtu.be">
-              <FontAwesomeIcon icon={faYoutube} />
-            </RBS.Nav.Link>
-
+            {window.innerWidth > 900 ?
+              <RBS.Nav.Link href="https://github.com/mbpod10">
+                <FontAwesomeIcon icon={faGithub} />
+              </RBS.Nav.Link> :
+              <RBS.Nav.Link href="https://github.com/mbpod10">
+                <div className='nav-div'>
+                  <FontAwesomeIcon icon={faGithub} />{"  "}
+                  <span className="nav-text">Github</span>
+                </div>
+              </RBS.Nav.Link>
+            }
+            {window.innerWidth > 900 ?
+              <RBS.Nav.Link href="http://copen.io">
+                <FontAwesomeIcon icon={faCodepen} />
+              </RBS.Nav.Link> :
+              <RBS.Nav.Link href="http://copen.io">
+                <div className='nav-div'>
+                  <FontAwesomeIcon icon={faCodepen} />{"  "}
+                  <span className="nav-text">Codepen</span>
+                </div>
+              </RBS.Nav.Link>
+            }
+            {window.innerWidth > 900 ?
+              <RBS.Nav.Link eventKey={2} href="https://www.youtube.com/watch?v=JYjdbw7XD3U&feature=youtu.be">
+                <FontAwesomeIcon icon={faYoutube} />
+              </RBS.Nav.Link> :
+              <RBS.Nav.Link href="https://www.youtube.com/watch?v=JYjdbw7XD3U&feature=youtu.be">
+                <div className='nav-div'>
+                  <FontAwesomeIcon icon={faYoutube} />{"  "}
+                  <span className="nav-text">Youtube</span>
+                </div>
+              </RBS.Nav.Link>
+            }
           </RBS.Nav>
         </RBS.Navbar.Collapse>
       </RBS.Navbar>
