@@ -1,0 +1,51 @@
+  .knowledge {
+    color: red;
+    font-size: 3.5rem;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .knowledge-div {     
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .fa-database, .fa-desktop, .fa-mobile-alt {
+    font-size: 1.5rem;
+    color: red;
+  }
+
+  .segment {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+  
+  .title {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .know-span {
+    color: red;
+    font-size: 1.25rem;
+    margin-left: 20px
+  }
+
+  .knowledge-p {
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  @media(max-width: 1200px) { 
+    
+  }
