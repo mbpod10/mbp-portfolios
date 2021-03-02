@@ -25,11 +25,19 @@
   font-size: 5rem;
 }
 
+.rounded-circle {
+  border-radius: 50%!important;
+  border:  3px solid red;
+  
+}
+
 .container {
   margin-top: 100px;
 }
 
 .technology {
+  /* border: red solid 1px;
+  padding-top: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;

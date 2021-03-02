@@ -5,13 +5,23 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faCodepen } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './statics/navbar.css'
+import { useState } from "react";
 
 const Navbar = (props) => {
+
+  // const [mobileView, setMobileView] = useState(true)
+  // const [width, setWidth] = useState(990)
+  // if (width > 990 && width != ) {
+  //   setMobileView(true)
+  // } else {
+  //   setMobileView(false)
+  // }
+
 
   return (
     <>
       <RBS.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <RBS.Navbar.Brand href="#home">M. Brock Podgurski</RBS.Navbar.Brand>
+        <RBS.Navbar.Brand href="#home" id='name'>MBP</RBS.Navbar.Brand>
         <RBS.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <RBS.Navbar.Collapse id="responsive-navbar-nav">
           <RBS.Nav className="mr-auto">
@@ -20,9 +30,16 @@ const Navbar = (props) => {
           </RBS.Nav>
           <RBS.Nav>
 
-            <RBS.Nav.Link href="https://www.linkedin.com/in/mbrock-podgurski/">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </RBS.Nav.Link>
+            {window.innerWidth > 900 ?
+              <RBS.Nav.Link href="https://www.linkedin.com/in/mbrock-podgurski/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </RBS.Nav.Link> :
+              <RBS.Nav.Link href="https://www.linkedin.com/in/mbrock-podgurski/">
+                <FontAwesomeIcon icon={faLinkedin} />{"  "}
+                <span className="nav-text">LinkedIn</span>
+              </RBS.Nav.Link>
+            }
+
 
             <RBS.Nav.Link href="https://github.com/mbpod10">
               <FontAwesomeIcon icon={faGithub} />
@@ -42,6 +59,6 @@ const Navbar = (props) => {
 
     </>
   )
-} 
- 
+}
+
 export default Navbar

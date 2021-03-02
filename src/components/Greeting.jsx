@@ -7,6 +7,7 @@ import { faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 const Greeting = () => {
+
   return (
     <>
       <div className='greeting-container'>
